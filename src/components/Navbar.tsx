@@ -3,11 +3,11 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/applogo.png";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Features", href: "#features" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "About", href: "/#about" },
+  { label: "How It Works", href: "/#how-it-works" },
+  { label: "Features", href: "/#features" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const Navbar = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
-        <a href="#home" className="flex items-center gap-2">
+        <a href="/#home" className="flex items-center gap-2">
           <img src={logo} alt="Buy n Earn" className="h-12 w-auto" />
         </a>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
         </ul>
 
         <a
-          href="#contact"
+          href="/#contact"
           className="hidden md:inline-flex rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
         >
           Get Started
@@ -68,7 +68,7 @@ const Navbar = () => {
             ))}
             <li>
               <a
-                href="#contact"
+                href="/#contact"
                 onClick={() => setOpen(false)}
                 className="inline-flex rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground"
               >
