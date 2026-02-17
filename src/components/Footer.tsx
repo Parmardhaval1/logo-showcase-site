@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "@/assets/applogo.png";
 
 const Footer = () => (
@@ -25,20 +26,23 @@ const Footer = () => (
         <div>
           <h4 className="font-heading font-bold text-primary-foreground mb-4">Legal</h4>
           <ul className="space-y-2 text-sm font-body">
-            {["Privacy Policy", "Terms of Service", "Refund Policy"].map((l) => (
-              <li key={l}>
-                <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">
-                  {l}
-                </a>
-              </li>
-            ))}
+            <li>
+              <Link to="/privacy-policy" className="text-primary-foreground/60 hover:text-accent transition-colors">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link to="/terms-of-service" className="text-primary-foreground/60 hover:text-accent transition-colors">
+                Terms of Service
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
           <h4 className="font-heading font-bold text-primary-foreground mb-4">Contact</h4>
           <ul className="space-y-2 text-sm font-body text-primary-foreground/60">
-            <li>support@buynearn.in</li>
-            <li>+91 98765 43210</li>
+            <li>info@buynearn.in</li>
+            <li>+91 98248 44356</li>
             <li>New Delhi, India</li>
           </ul>
         </div>

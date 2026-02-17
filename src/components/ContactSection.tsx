@@ -54,8 +54,8 @@ const ContactSection = () => (
         {/* Info */}
         <div className="space-y-8 flex flex-col justify-center">
           {[
-            { icon: Mail, label: "Email Us", value: "support@buynearn.in" },
-            { icon: Phone, label: "Call Us", value: "+91 98765 43210" },
+            { icon: Mail, label: "Email Us", value: "info@buynearn.in" },
+            { icon: Phone, label: "Call Us", value: "+91 98248 44356" },
             { icon: MapPin, label: "Visit Us", value: "New Delhi, India" },
           ].map((c) => (
             <div key={c.label} className="flex items-start gap-4">
